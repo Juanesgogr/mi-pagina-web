@@ -1,0 +1,20 @@
+<header [class.scrolled]="scrolled">
+
+  <div class="logo-container" routerLink="/" (click)="closeMenu()">
+    <img src="img/logo1.jpeg" alt="logo" class="logo-img">
+    <h2 class="logo-text">EVERBLOOM</h2>
+  </div>
+
+  <div class="menu-toggle" (click)="toggleMenu()" aria-label="Abrir menú">
+    ☰
+  </div>
+
+  <nav [class.active]="menuOpen">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Inicio</a>
+    <a routerLink="/productos" routerLinkActive="active" (click)="closeMenu()">Productos</a>
+    <a routerLink="/nosotros" routerLinkActive="active" (click)="closeMenu()">Nosotros</a>
+  </nav>
+
+  <div class="overlay" *ngIf="menuOpen" (click)="closeMenu()"></div>
+
+</header>

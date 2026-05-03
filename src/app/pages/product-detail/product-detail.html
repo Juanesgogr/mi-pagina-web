@@ -1,0 +1,41 @@
+<div *ngIf="productoSeleccionado" class="detail">
+
+  <div class="detail-container">
+
+    <div class="image">
+
+      <button class="back-btn" (click)="volver()">
+        ←
+      </button>
+
+      <img [src]="productoSeleccionado.imagen" alt="{{ productoSeleccionado.nombre }}">
+
+    </div>
+
+    <div class="info">
+
+      <h1 class="title">
+        {{ productoSeleccionado.nombre }}
+      </h1>
+
+      <p class="price">
+        {{ productoSeleccionado.precio | currency:'COP ':'symbol':'1.0-0' }}
+      </p>
+
+       <p class="description">
+       {{ productoSeleccionado.detalle }}
+       </p>
+
+      <div class="actions">
+
+        <button class="buy-btn" (click)="enviarWhatsApp()">
+          Pedir por WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

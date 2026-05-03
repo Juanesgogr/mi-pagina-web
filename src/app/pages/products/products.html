@@ -1,0 +1,56 @@
+<section class="products">
+
+  <section class="selector">
+    <h1>¿Qué quieres expresar?</h1>
+
+    <div class="options">
+      <div class="option" (click)="categoriaSeleccionada = 'todos'">Todos</div>
+      <div class="option" (click)="categoriaSeleccionada = 'cumple'">Cumpleaños</div>
+      <div class="option" (click)="categoriaSeleccionada = 'regalo'">Regalos</div>
+    </div>
+  </section>
+
+  <div class="category">
+    <h2 class="category-title">Nuestros Productos</h2>
+
+    <div class="product-grid">
+
+      <ng-container *ngFor="let p of productos">
+
+        <div class="product-card"
+             *ngIf="categoriaSeleccionada === 'todos' || categoriaSeleccionada === p.categoria">
+
+          <div class="badge" *ngIf="p.destacado">Más vendido</div>
+
+          <div class="image-container">
+            <img [src]="p.imagen" [alt]="p.nombre">
+          </div>
+
+          <div class="info">
+
+            <h3>{{ p.nombre }}</h3>
+
+            <p class="price">
+              COP {{ p.precio | number }}
+            </p>
+
+            <p class="desc">
+              {{ p.descripcion }}
+            </p>
+
+            <button 
+              [routerLink]="['/producto', p.id]" 
+              class="buy-btn">
+              Ver detalle
+            </button>
+
+          </div>
+
+        </div>
+
+      </ng-container>
+
+    </div>
+  </div>
+
+</section>
