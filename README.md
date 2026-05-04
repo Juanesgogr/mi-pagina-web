@@ -2,13 +2,13 @@
 
 Aplicación web desarrollada con Angular para una tienda de regalos florales.
 
------------------------------------------------------------------------------
+---
 
 ## 🚀 Demo en vivo
 Puedes ver la página aquí:  
 https://everbloom-gray.vercel.app/
 
------------------------------------------------------------------------------
+---
 
 ## 🛠️ Tecnologías usadas
 - Angular  
@@ -16,7 +16,7 @@ https://everbloom-gray.vercel.app/
 - HTML  
 - CSS  
 
--------------------------------------------------------------------------------
+---
 
 ## 📸 Funcionalidades
 - Página de inicio  
@@ -25,7 +25,7 @@ https://everbloom-gray.vercel.app/
 - Sección de contacto  
 - Diseño adaptable a diferentes dispositivos  
 
----------------------------------------------------------------------------------
+---
 
 ## ⚙️ Cómo ejecutar el proyecto
 
