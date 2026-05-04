@@ -18,7 +18,7 @@ https://everbloom-gray.vercel.app/
 
 ---
 
-## 📸 Funcionalidades
+## 📌 Funcionalidades
 - Página de inicio  
 - Catálogo de productos  
 - Vista de detalle de cada producto  
