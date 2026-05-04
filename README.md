@@ -1,4 +1,4 @@
-# 🌸 Everbloom
+# 🌸 EVERBLOOM
 
 Aplicación web desarrollada con Angular para una tienda de regalos florales.
 
